@@ -69,7 +69,7 @@ public class Client {
                         System.out.println("Authentication failed. Exiting...");
                         break;  // Exit the loop if authentication fails
                     }
-                }
+                } //changes
             }
         }
     }
