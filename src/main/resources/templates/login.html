@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(#CC5500, #E97451);
+      font-family: Arial, sans-serif;
+    }
+    form {
+      background-color: #fff;
+      margin-right: 10px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-right: -10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff7f50;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f28C28;
+    }
+  </style>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+  <h2>Login</h2>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <button type="submit">Login</button>
+</form>
+</body>
+</html>
