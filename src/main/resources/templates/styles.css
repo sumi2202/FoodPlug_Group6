@@ -15,3 +15,7 @@ body{
     background: #fbf5f3
     
 }
+.wrapper h1{
+    font-size: 36px;
+    text-align:center;
+}
