@@ -47,12 +47,3 @@ body{
     color:#1e2d2fff;
 }
 
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color:#1e2d2fff;
-
-}
