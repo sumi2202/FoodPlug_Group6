@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Restaurant Subscription</title>
     <!-- Add any necessary CSS styles for your card view here -->
+    <link rel="stylesheet" href="subscStyle.css">
     <style>
         .menu-card {
             /* Define styles for your menu card */
@@ -14,6 +15,20 @@
     </style>
 </head>
 <body>
+<div class="wrapper">
+    <form th:action="@{/subscribe}" method="post">
+        <h1><strong>Subscribe to Restaurants</strong></h1>
+
+        <div class="input-box">
+            <label for="restaurants">Select Restaurants to Subscribe (comma-separated):</label>
+            <input type="text" name="restaurants" id="restaurants" placeholder="Restaurant1,Restaurant2,..." required>
+            <!-- You can add more input fields for other preferences if needed -->
+        </div>
+
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</div>
+
 <h2>Available Restaurants</h2>
 <ul>
     <!-- Display available restaurants fetched from Java -->
