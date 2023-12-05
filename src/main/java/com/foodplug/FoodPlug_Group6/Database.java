@@ -10,7 +10,7 @@ public class Database {
             // Replace with your database url, username, and password
             String url = "jdbc:mysql://localhost:3306/distributedapp_schema";
             String username = "root";
-            String password = "%Laksumi2002";
+            String password = "Lolo@238";
 
             myConnection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
