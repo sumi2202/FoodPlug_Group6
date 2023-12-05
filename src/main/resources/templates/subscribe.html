@@ -2,12 +2,44 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Subscribe</title>
+    <title>Restaurant Subscription</title>
+    <!-- Add any necessary CSS styles for your card view here -->
+    <style>
+        .menu-card {
+            /* Define styles for your menu card */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-<h2>Restaurant Subscription</h2>
+<h2>Available Restaurants</h2>
 <ul>
-    <li th:each="user : ${users}">${user.firstName}</li>
+    <!-- Display available restaurants fetched from Java -->
+    <li th:each="restaurant : ${restaurants}">
+        <!-- Include a subscription button or form -->
+        <form th:action="@{/subscribe}" method="post">
+            <input type="hidden" name="restaurantId" th:value="${restaurant.id}" />
+            <button type="submit">Subscribe to ${restaurant.name}</button>
+        </form>
+    </li>
+</ul>
+
+<h2>Subscribed Restaurants</h2>
+<ul>
+    <!-- Display subscribed restaurants fetched from Java -->
+    <li th:each="subscribedRestaurant : ${subscribedRestaurants}">
+        <h3 th:text="${subscribedRestaurant.name}"></h3>
+
+        <!-- Display menu cards for each subscribed restaurant -->
+        <div th:each="menu : ${subscribedRestaurant.menu}" class="menu-card">
+            <h4 th:text="${menu.name}"></h4>
+            <p th:text="${menu.description}"></p>
+            <!-- Add more details as needed -->
+        </div>
+    </li>
 </ul>
 </body>
 </html>
+
