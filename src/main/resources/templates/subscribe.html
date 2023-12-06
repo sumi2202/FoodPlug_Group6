@@ -17,45 +17,33 @@
 </head>
 <body>
 <div class="wrapper">
+    <h2><strong>Available Restaurants</strong></h2>
+    <ul class="listings" style="list-style: none;">
+        <li>Restaurant0</li>
+        <li>Restaurant1</li>
+        <li>Restaurant2</li>
+        <li>Restaurant3</li>
+        <li>Restaurant4</li>
+        <li>Restaurant5</li>
+        <li>Restaurant6</li>
+        <li>Restaurant7</li>
+        <li>Restaurant8</li>
+        <li>Restaurant9</li>
+    </ul>
+</div>
+<div class="wrapper">
     <form th:action="@{/subscribe}" method="post">
         <h1><strong>Subscribe to Restaurants</strong></h1>
 
         <div class="input-box">
             <label for="restaurants">Select Restaurants to Subscribe (comma-separated):</label>
-            <input type="text" name="restaurants" id="restaurants" placeholder="Restaurant1,Restaurant2,..." required>
-            <!-- You can add more input fields for other preferences if needed -->
+            <input type="text" name="restaurants" id="restaurants" placeholder="make your selection" required>
         </div>
 
         <button type="submit" class="btn">Subscribe</button>
     </form>
 </div>
 
-<h2>Available Restaurants</h2>
-<ul>
-    <!-- Display available restaurants fetched from Java -->
-    <li th:each="restaurant : ${restaurants}">
-        <!-- Include a subscription button or form -->
-        <form th:action="@{/subscribe}" method="post">
-            <input type="hidden" name="restaurantId" th:value="${restaurant.id}" />
-            <button type="submit">Subscribe to ${restaurant.name}</button>
-        </form>
-    </li>
-</ul>
-
-<h2>Subscribed Restaurants</h2>
-<ul>
-    <!-- Display subscribed restaurants fetched from Java -->
-    <li th:each="subscribedRestaurant : ${subscribedRestaurants}">
-        <h3 th:text="${subscribedRestaurant.name}"></h3>
-
-        <!-- Display menu cards for each subscribed restaurant -->
-        <div th:each="menu : ${subscribedRestaurant.menu}" class="menu-card">
-            <h4 th:text="${menu.name}"></h4>
-            <p th:text="${menu.description}"></p>
-            <!-- Add more details as needed -->
-        </div>
-    </li>
-</ul>
 </body>
 </html>
 
