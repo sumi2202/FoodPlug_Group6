@@ -36,6 +36,35 @@ body{
 }
 .food-items img{
     position: relative;
-    width: 100%;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px 15px 0 0;
+}
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto lfr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price{
+    text-align: right;
+}
+.details>p{
+    color:#c42021ff;
 }
