@@ -32,7 +32,7 @@ The application is running on port 8081
 #### To tun the springboot application
 
 1. Run the RestaurantServer.java
-2. Run the FoofPlugGroup6Application.java
+2. Run the FoodPlugGroup6Application.java
 3. Go to localhost:8081
 
    
