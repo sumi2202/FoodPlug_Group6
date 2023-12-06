@@ -34,10 +34,17 @@ body{
     font-size: 22px;
     letter-spacing: 5px;
 }
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto lfr;
+    border-radius: 15px;
+    box-shadow: o o 15px rgba(0, 0, 0, 0.1);
+}
 .food-items img{
     position: relative;
     height: 300px;
-    width: 300px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     border-radius: 15px 15px 0 0;
@@ -67,4 +74,17 @@ h1{
 }
 .details>p{
     color:#c42021ff;
+    font-size: 15px;
+    line-height: 20px;
+    line-weight: 400;
+    align-self: stretch;
+}
+.details>button{
+    background-color: #f3752bff;
+    border: none;
+    color: #fbf5f3ff;
+    font-size: 16px;
+    font-weight: 600px;
+    border-radius: 5px;
+    width: 180px;
 }
