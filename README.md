@@ -20,3 +20,20 @@ In terms of connecting the databases, the Database.java file contains the config
 
 To run the application, the user can run the application using the IDE. 
 
+The application is running on port 8081
+
+#### To run the application on the terminal
+
+1. Run the UpdatesServer.java
+2. Run the RestaurantServer.java
+3. Run the Client.java
+
+
+#### To tun the springboot application
+
+1. Run the RestaurantServer.java
+2. Run the FoofPlugGroup6Application.java
+3. Go to localhost:8081
+
+   
+
