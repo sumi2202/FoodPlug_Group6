@@ -2,11 +2,11 @@
 
 ## Final Project: FoodPlug - Distributed Food Ordering Application using Publish-Subscribe
 
-Group 6 members:
+Group 6
 
 -----------------------------------------------
 
-Our application makes use of a publish-subscribe approach through the use of two servers that handle different tasks; using ZeroMQ, the application utilizes 
+Our application makes use of a publish-subscribe approach through the use of two servers that handle different tasks; this application uses JeroMQ, a Java implementation of ZeroMQ.
 
 ### Adding project dependencies
 
