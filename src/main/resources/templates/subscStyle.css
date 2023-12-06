@@ -46,7 +46,7 @@ body {
 }
 
 .input-box input {
-    width: calc(100% - 40px); /* Adjusted width to account for icon space */
+    width: calc(100% - 40px);
     height: 100%;
     background: #fbf5f3;
     border: none;
@@ -54,7 +54,7 @@ body {
     border: 1px solid #fbf5f3;
     border-radius: 40px;
     font-size: 16px;
-    padding: 20px 45px 20px 60px; /* Increased left padding for icon */
+    padding: 20px 45px 20px 60px;
 }
 
 .input-box input::placeholder {
